@@ -1,0 +1,38 @@
+//Media Query manager
+/*
+Order = Base + typograpy -> layouts -> grid -> page layout -> components1
+
+0-600px phone
+600px-900px Tablet
+900px-1200px Tablet grande
+1200 - 1800 - style padrao
+1800+ big screen
+*/
+
+@mixin respons($breakpoint) {
+  @if $breakpoint==phone {
+    @media (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+
+  @if $breakpoint==tablet {
+    @media (max-width: 56.25em) {
+      //900px
+      @content;
+    }
+  }
+
+  @if $breakpoint==big-tablet {
+    @media (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+
+  @if $breakpoint==big-screen {
+    @media (min-width: 112.5em) {
+      // 1800px
+      @content;
+    }
+  }
+}

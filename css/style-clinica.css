@@ -1,0 +1,511 @@
+/*
+Order = Base + typograpy -> layouts -> grid -> page layout -> components1
+
+0-600px phone
+600px-900px Tablet
+900px-1200px Tablet grande
+1200 - 1800 - style padrao
+1800+ big screen
+*/
+@keyframes moveLeft {
+  /* what happens in the beginning */
+  0% {
+    /* starts invisible and 100rem left from the original position */
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+    /* back to original position and opacity */
+  }
+}
+@keyframes moveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveUp {
+  0% {
+    transform: translateY(8rem);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+/* seletor universal */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.main-title {
+  font-family: Roboto;
+  font-size: 6.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 7.5rem;
+  letter-spacing: 0em;
+}
+
+.main-subtitle {
+  font-family: Roboto;
+  font-size: 2.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.1rem;
+  letter-spacing: 0em;
+}
+
+.section-title {
+  font-family: Roboto;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 4.2rem;
+  letter-spacing: 0em;
+}
+
+.section-subtitle {
+  font-family: Roboto;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 2.8rem;
+  letter-spacing: 0.05em;
+}
+
+.section-text {
+  font-family: Roboto;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.1rem;
+  letter-spacing: 0em;
+}
+
+.fluid-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.c-branco {
+  color: #f8fdf9;
+}
+
+.c-verde-claro {
+  color: #8ab596;
+}
+
+.c-verde {
+  color: #7fad8c;
+}
+
+.c-verde-escuro {
+  color: #55785e;
+}
+
+.f-branco {
+  background-color: #f8fdf9;
+}
+
+.f-verde-claro {
+  background-color: #8ab596;
+}
+
+.f-verde {
+  background-color: #7fad8c;
+}
+
+.f-verde-escuro {
+  background-color: #55785e;
+}
+
+.button {
+  border-radius: 4rem;
+  padding: 1.3rem 5rem;
+  width: 18rem;
+  display: inline-block;
+  transition: all 0.3s;
+  text-align: center;
+}
+.button:hover {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.3rem);
+}
+
+.button-text {
+  font-family: Roboto;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.1rem;
+  letter-spacing: 0em;
+  text-align: center;
+  text-decoration: none;
+}
+.button-text-verde:hover {
+  color: #7fad8c;
+}
+.button-text-branco:hover {
+  color: #f8fdf9;
+}
+
+.equipe {
+  width: 35rem;
+  height: 55rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 3rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+.equipe-titulo {
+  margin: 8rem 0 5rem;
+}
+.equipe-infos {
+  background-color: rgba(248, 253, 249, 0.5);
+  text-align: left;
+  flex: 0.3;
+  padding: 1rem 2rem;
+}
+.equipe-title {
+  font-size: 3rem;
+  color: #8ab596;
+}
+.equipe-text {
+  font-size: 1.8rem;
+  color: #55785e;
+}
+.equipe-boximg {
+  background-color: white;
+  flex: 0.7;
+  background-size: cover;
+}
+.equipe-boximg-1 {
+  background-image: url(../images/clinica/marina.jpeg);
+}
+.equipe-boximg-2 {
+  background-image: url(../images/clinica/aline.jpeg);
+}
+.equipe-boximg-3 {
+  background-image: url(../images/clinica/ariele.jpeg);
+}
+.equipe-boximg-4 {
+  background-image: url(../images/clinica/carla.jpeg);
+}
+.equipe-boximg-5 {
+  background-image: url(../images/clinica/ariane.jpeg);
+}
+.equipe-boximg-6 {
+  background-image: url(../images/clinica/debora.jpeg);
+}
+.equipe-boximg-7 {
+  background-image: url(../images/clinica/carolina.jpeg);
+}
+.equipe-boximg-8 {
+  background-image: url(../images/clinica/patricia.jpeg);
+}
+.equipe-boximg-9 {
+  background-image: url(../images/clinica/fatima.jpeg);
+}
+
+.header {
+  margin-bottom: 10rem;
+}
+.header-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+}
+.header-item:not(:last-child) {
+  margin-right: 4rem;
+}
+.header-link {
+  font-family: Roboto;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.1rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #f8fdf9;
+  text-decoration: none;
+}
+.header-link:hover {
+  font-weight: bold;
+  color: #f8fdf9;
+}
+
+.estetica {
+  background-image: url("../images/clinica/fundo3.png");
+  background-size: cover;
+  text-align: center;
+  padding: 5rem 3rem;
+}
+.estetica-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 8rem auto 5rem;
+}
+.estetica-card {
+  background-color: #f8fdf9;
+  text-align: center;
+  padding: 3rem 8rem;
+  border-radius: 1rem;
+  width: 60rem;
+}
+.estetica-card-title {
+  font-size: 2.4rem;
+  color: #55785e;
+  margin-bottom: 3rem;
+}
+.estetica-card-text {
+  font-size: 2.4rem;
+  color: #8ab596;
+}
+.estetica-img {
+  border: 0.5rem solid #55785e;
+  border-radius: 1rem;
+  background-size: cover;
+  background-image: url("../images/clinica/oleo.png");
+  width: 40rem;
+  height: 40rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.main {
+  background-image: url("../images/clinica/fundo1.png");
+  background-size: cover;
+  padding: 5rem 5rem 10rem;
+  position: relative;
+  overflow: hidden;
+}
+.main-list {
+  list-style: none;
+  padding: 3rem 0;
+}
+.main-item:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+.main-icon {
+  margin-right: 1rem;
+}
+.main-foto {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 90%;
+  height: 100vh;
+}
+
+.servicos {
+  background-image: url("../images/clinica/fundo3.png");
+  background-size: cover;
+  text-align: center;
+  padding: 5rem 3rem;
+}
+
+.card {
+  background-color: #f8fdf9;
+  width: 75%;
+  padding: 5rem 0;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-row {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.card-linha {
+  background-color: #8ab596;
+  width: 0.1rem;
+  height: auto;
+}
+.card-item {
+  margin-bottom: 4rem;
+  min-width: 40rem;
+}
+.card-item-title {
+  font-family: Roboto;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 2.8rem;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #8ab596;
+  margin-bottom: 1.5rem;
+}
+.card-item-text {
+  font-family: Roboto;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6rem;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #8ab596;
+  padding: 0 10rem;
+}
+.card-item-last {
+  width: 50%;
+}
+
+.sobrenos {
+  padding: 8rem;
+  text-align: center;
+  background-image: url("../images/clinica/fundo2.png");
+  background-size: cover;
+}
+.sobrenos-titulos {
+  margin-bottom: 5rem;
+}
+.sobrenos-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+.sobrenos-textos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  min-width: 45rem;
+}
+.sobrenos-texto {
+  padding: 0 8rem;
+}
+
+.galeria {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  flex: 1;
+}
+.galeria-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.galeria-bloco {
+  border: 0.5rem solid #8ab596;
+  border-radius: 1rem;
+  background-size: cover;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+.galeria-bloco-1 {
+  width: 35rem;
+  height: 35rem;
+  background-image: url("../images/clinica/foto1.png");
+}
+.galeria-bloco-2 {
+  width: 20rem;
+  height: 40rem;
+  background-image: url("../images/clinica/foto2.png");
+}
+.galeria-bloco-3 {
+  width: 20rem;
+  height: 20rem;
+  align-self: flex-end;
+  position: relative;
+  left: 2rem;
+  background-image: url("../images/clinica/foto3.png");
+}
+
+.spa {
+  padding: 8rem;
+  text-align: center;
+  background-size: cover;
+  background-image: url("../images/clinica/fundo4.png");
+}
+.spa-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  margin-top: 8rem;
+}
+.spa-img {
+  border: 0.5rem solid #8ab596;
+  border-radius: 1rem;
+  background-size: cover;
+  background-image: url("../images/clinica/spa.png");
+  width: 50rem;
+  height: 35rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+.spa-info {
+  text-align: left;
+}
+.spa-title {
+  color: #55785e;
+  font-size: 4.8rem;
+}
+.spa-text {
+  color: #55785e;
+  font-size: 1.8rem;
+  margin: 2rem 0 3rem;
+}
+
+/*# sourceMappingURL=style-clinica.css.map */

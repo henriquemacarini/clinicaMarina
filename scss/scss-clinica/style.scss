@@ -1,0 +1,20 @@
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+@import "./base/animation";
+@import "./base/base";
+@import "./base/typography";
+@import "./base/utilities";
+
+@import "./components/button";
+@import "./components/equipe";
+@import "./components/header";
+
+@import "./layout/estetica";
+@import "./layout/main";
+@import "./layout/servicos.scss";
+@import "./layout/sobrenos";
+@import "./layout/spa";
+
+//iniciar o sass
+//sass --watch .\scss\scss-clinica\style.scss .\css\style-clinica.css

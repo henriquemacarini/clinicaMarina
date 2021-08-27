@@ -1,0 +1,19 @@
+.button {
+  background-color: $roxo;
+  border-radius: 5px;
+  padding: 1.7rem 3.5rem;
+
+  text-align: center;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  color: $branco;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $roxo-escuro;
+    color: $branco;
+  }
+}

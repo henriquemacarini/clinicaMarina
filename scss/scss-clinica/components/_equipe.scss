@@ -1,0 +1,64 @@
+.equipe {
+  width: 35rem;
+  height: 55rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 3rem;
+  box-shadow: 0 1rem 1rem rgba($color: #000000, $alpha: 0.1);
+
+  &-titulo {
+    margin: 8rem 0 5rem;
+  }
+
+  &-infos {
+    background-color: rgba($main-branco, 0.5);
+    text-align: left;
+    flex: 0.3;
+    padding: 1rem 2rem;
+  }
+
+  &-title {
+    font-size: 3rem;
+    color: $verde-claro;
+  }
+  &-text {
+    font-size: 1.8rem;
+    color: $verde-escuro;
+  }
+
+  &-boximg {
+    background-color: white;
+    flex: 0.7;
+    background-size: cover;
+
+    &-1 {
+      background-image: url(../images/clinica/marina.jpeg);
+    }
+    &-2 {
+      background-image: url(../images/clinica/aline.jpeg);
+    }
+    &-3 {
+      background-image: url(../images/clinica/ariele.jpeg);
+    }
+    &-4 {
+      background-image: url(../images/clinica/carla.jpeg);
+    }
+    &-5 {
+      background-image: url(../images/clinica/ariane.jpeg);
+    }
+    &-6 {
+      background-image: url(../images/clinica/debora.jpeg);
+    }
+    &-7 {
+      background-image: url(../images/clinica/carolina.jpeg);
+    }
+    &-8 {
+      background-image: url(../images/clinica/patricia.jpeg);
+    }
+    &-9 {
+      background-image: url(../images/clinica/fatima.jpeg);
+    }
+  }
+}

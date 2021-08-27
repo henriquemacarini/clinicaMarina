@@ -1,0 +1,69 @@
+.sobrenos {
+  padding: 8rem;
+  text-align: center;
+  background-image: url("../images/clinica/fundo2.png");
+  background-size: cover;
+
+  &-titulos {
+    margin-bottom: 5rem;
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+  }
+
+  &-textos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    min-width: 45rem;
+  }
+
+  &-texto {
+    padding: 0 8rem;
+  }
+}
+
+.galeria {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  flex: 1;
+
+  &-row {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &-bloco {
+    border: 0.5rem solid $verde-claro;
+    border-radius: 1rem;
+    background-size: cover;
+    box-shadow: 0 1rem 1rem rgba($color: #000000, $alpha: 0.3);
+    &-1 {
+      width: 35rem;
+      height: 35rem;
+      background-image: url("../images/clinica/foto1.png");
+    }
+    &-2 {
+      width: 20rem;
+      height: 40rem;
+      background-image: url("../images/clinica/foto2.png");
+    }
+    &-3 {
+      width: 20rem;
+      height: 20rem;
+      align-self: flex-end;
+      position: relative;
+      left: 2rem;
+      background-image: url("../images/clinica/foto3.png");
+    }
+  }
+}

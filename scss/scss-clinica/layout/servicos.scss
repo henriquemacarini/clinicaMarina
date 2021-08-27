@@ -1,0 +1,67 @@
+.servicos {
+  background-image: url("../images/clinica/fundo3.png");
+  background-size: cover;
+  text-align: center;
+  padding: 5rem 3rem;
+}
+
+.card {
+  background-color: $main-branco;
+  width: 75%;
+  padding: 5rem 0;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &-row {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  &-linha {
+    background-color: $verde-claro;
+    width: 0.1rem;
+    height: auto;
+  }
+
+  &-item {
+    margin-bottom: 4rem;
+    min-width: 40rem;
+    &-title {
+      font-family: Roboto;
+      font-size: 2.4rem;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 2.8rem;
+      letter-spacing: 0em;
+      text-align: center;
+      color: $verde-claro;
+      margin-bottom: 1.5rem;
+    }
+    &-text {
+      font-family: Roboto;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.6rem;
+      letter-spacing: 0em;
+      text-align: center;
+      color: $verde-claro;
+      padding: 0 10rem;
+    }
+
+    &-last {
+      width: 50%;
+    }
+  }
+}

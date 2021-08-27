@@ -1,0 +1,64 @@
+.data {
+  margin-bottom: 5rem;
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-title {
+    font-family: Roboto;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.1rem;
+    letter-spacing: 0em;
+    color: $roxo-claro;
+    margin-right: 2rem;
+  }
+
+  &-linha {
+    background-color: $roxo-claro;
+    height: 2px;
+    flex: 1;
+  }
+
+  &-preco {
+    font-family: Roboto;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.1rem;
+    color: $roxo-escuro;
+    margin-left: 2rem;
+  }
+
+  &-bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-text {
+    margin-top: 1rem;
+    font-family: Roboto;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    color: $roxo-escuro;
+    text-align: left;
+    flex: 2;
+  }
+
+  &-tempo {
+    font-family: Roboto;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.6rem;
+    color: $roxo-claro;
+    flex: 1;
+    text-align: right;
+  }
+}

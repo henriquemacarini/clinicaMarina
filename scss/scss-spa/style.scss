@@ -1,0 +1,21 @@
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+@import "./base/animation";
+@import "./base/base";
+@import "./base/typography";
+@import "./base/utilities";
+
+@import "./components/button";
+@import "./components/data";
+@import "./components/imagemFinal";
+@import "./components/servicosCard";
+
+@import "./layout/footer";
+@import "./layout/home";
+@import "./layout/navbar";
+@import "./layout/servicos";
+@import "./layout/sobre";
+
+//iniciar o sass
+//sass --watch .\scss\scss-spa\style.scss .\css\style-spa.css

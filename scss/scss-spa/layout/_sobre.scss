@@ -1,0 +1,134 @@
+.sobre {
+  text-align: center;
+  background-image: url("../images/spa/fundo3.png");
+  background-size: cover;
+  padding: 10rem 2rem;
+  background-color: $fundo-branco;
+
+  &-text {
+    margin-bottom: 6rem;
+    padding: 0 5rem;
+  }
+
+  &-galeria {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+
+    &-left {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &-img {
+    border: 4px solid $roxo;
+    border-radius: 5px;
+    box-shadow: 0rem 1rem 1rem rgb(0, 0, 0, 0.4);
+    transition: all 0.3s;
+
+    // &:hover {
+    //   transform: scale(1.3);
+    //   z-index: 3000;
+    // }
+
+    &-1 {
+      top: 0;
+      left: 0;
+      width: 29rem;
+      height: 18rem;
+    }
+
+    &-2 {
+      top: 10rem;
+      left: 0;
+      width: 29rem;
+      height: 17rem;
+      margin-left: 7rem;
+      margin-top: 3rem;
+    }
+
+    &-3 {
+      width: 31rem;
+      height: 19rem;
+      align-self: center;
+    }
+
+    &-4 {
+      width: 23rem;
+      height: 37rem;
+    }
+  }
+  //280 = 21rem
+}
+
+@include respons(tablet) {
+  .sobre-img {
+    &-1 {
+      top: 0;
+      left: -5rem;
+      width: 23rem;
+      height: 14rem;
+    }
+
+    &-2 {
+      top: 10rem;
+      left: 0;
+      width: 23rem;
+      height: 14rem;
+      margin-left: 2rem;
+      margin-top: 3rem;
+    }
+
+    &-3 {
+      width: 23rem;
+      height: 15rem;
+      align-self: center;
+    }
+
+    &-4 {
+      width: 19rem;
+      height: 30rem;
+    }
+  }
+}
+
+@include respons(phone) {
+  .sobre-galeria {
+    display: block;
+    position: relative;
+
+    &-left {
+      padding-left: 2rem;
+    }
+  }
+  .sobre-img {
+    &-1 {
+      width: 18rem;
+      height: 10rem;
+    }
+
+    &-2 {
+      width: 17rem;
+      height: 10rem;
+      margin-left: 2rem;
+      margin-top: 3rem;
+    }
+
+    &-3 {
+      width: 30rem;
+      height: 19rem;
+      align-self: center;
+      margin-top: 3rem;
+    }
+
+    &-4 {
+      position: absolute;
+      top: 0;
+      right: 5rem;
+      width: 14rem;
+      height: 20rem;
+    }
+  }
+}

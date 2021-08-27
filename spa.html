@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spa Marina Macarini</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/spa/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./images/spa/android-icon-192x192.png"
+    />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="./css/icon.css" />
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="./css/style-spa.css" />
+  </head>
+  <body>
+    <section class="main">
+      <!-- Navigation Web -->
+      <nav class="navigation">
+        <img
+          src="./images/spa/logo.png"
+          alt="Spa Marina Macarini"
+          class="logo-img"
+        />
+
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="#inicio" class="navigation-link">Início</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#sobre" class="navigation-link">Sobre nós</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#servicos" class="navigation-link">Serviços</a>
+          </li>
+          <li class="navigation-item">
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=5519971022560"
+              class="button"
+              >Contato</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Navigation Mobile -->
+      <div class="navigationMobile">
+        <img
+          src="./images/spa/logo.png"
+          alt="Spa Marina Macarini"
+          class="navigationMobile-logo"
+        />
+
+        <nav class="mobileNav">
+          <input type="checkbox" class="mobileNav-checkbox" id="navi-toggle" />
+
+          <label for="navi-toggle" class="mobileNav-button">
+            <span class="lnr lnr-menu mobileNav-icon">&nbsp;</span>
+          </label>
+
+          <div class="mobileNav-background" id="mobileNav-background">
+            &nbsp;
+          </div>
+
+          <div class="mobileNav-nav">
+            <ul class="mobileNav-list">
+              <li class="mobileNav-item">
+                <a href="#inicio" class="mobileNav-link" onclick="algo()"
+                  >Início</a
+                >
+              </li>
+              <li class="mobileNav-item">
+                <a href="#sobre" class="mobileNav-link" onclick="algo()"
+                  >Sobre nós</a
+                >
+              </li>
+              <li class="mobileNav-item">
+                <a href="#servicos" class="mobileNav-link" onclick="algo()"
+                  >Serviços</a
+                >
+              </li>
+              <li class="mobileNav-item">
+                <a
+                  target="_blank"
+                  href="https://api.whatsapp.com/send?phone=5519971022560"
+                  class="mobileNav-link"
+                  >Contato</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="home container" id="inicio">
+        <div class="row">
+          <div class="col-md-5 col-12">
+            <div class="home-info">
+              <h1 class="main-title">
+                O Melhor Lugar,<br />Para Você
+                <span style="color: #9c7cc6">Relaxar</span>.
+              </h1>
+              <p class="footer-text home-info-subtitle">
+                <span
+                  class="lnr lnr-map-marker"
+                  style="padding-right: 5px"
+                ></span
+                >Bloemendaal, Cidade das Flores.
+              </p>
+
+              <a
+                target="_blank"
+                href="https://api.whatsapp.com/send?phone=5519971022560"
+                class="button"
+                >Contato</a
+              >
+
+              <p class="footer-text home-info-footer">
+                - Um espaço único e exclusivo, decorado especialmente<br />
+                para as práticas de relaxamento e técnicas terapêuticas.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-7 col-12">
+            <div class="home-img-box">
+              <img
+                src="./images/spa/pier.jpeg"
+                alt=""
+                class="home-img-1 home-img"
+              />
+              <img
+                src="./images/spa/janela.png"
+                alt=""
+                class="home-img-2 home-img"
+              />
+              <img
+                src="./images/spa/camas2.jpeg"
+                alt=""
+                class="home-img-3 home-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <img src="./images/spa/fundoBaixo1.png" alt="" class="imagemFinal" />
+
+    <section class="sobre" id="sobre">
+      <h2 class="page-info mb-5">SOBRE NÓS</h2>
+      <h1 class="page-title mb-4">CONFORTÁVEL, LINDO E ACONCHEGANTE</h1>
+      <h3 class="page-subtitle sobre-text">
+        O Spa está situado dentro do Complexo Bloemendaal. Um ambiente
+        reservado, no coração da Cidade das Flores. Venha conhecer e se deliciar
+        com as terapias. Trabalhamos somente com produtos naturais como óleos
+        essenciais, vegetais e ervas medicinais, proporcionando um profundo
+        descanso para o corpo e a mente.
+      </h3>
+      <a
+        target="_blank"
+        href="https://api.whatsapp.com/send?phone=5519971022560"
+        class="button sobre-button"
+        >Contato</a
+      >
+      <div class="sobre-galeria">
+        <div class="sobre-galeria-left">
+          <img
+            src="./images/spa/buda.jpeg"
+            alt=""
+            class="sobre-img-1 sobre-img"
+          />
+          <img
+            src="./images/spa/camas.jpeg"
+            alt=""
+            class="sobre-img-2 sobre-img"
+          />
+        </div>
+        <img
+          src="./images/spa/banheiracima.jpeg"
+          alt=""
+          class="sobre-img-3 sobre-img"
+        />
+        <img src="./images/spa/luz.jpeg" alt="" class="sobre-img-4 sobre-img" />
+      </div>
+    </section>
+
+    <img src="./images/spa/fundoBaixo2.png" alt="" class="imagemFinal" />
+
+    <section class="servicos" id="servicos">
+      <h2 class="page-info mb-5">NOSSOS SERVIÇOS</h2>
+      <h1 class="page-title mb-4">NOSSAS MELHORES MASSAGENS</h1>
+      <h3 class="page-subtitle servicos-text">
+        Seleção de diversos tipos de massagens e técnicas para trabalhar o corpo
+        e a mente.
+      </h3>
+
+      <div class="servicos-cardRow">
+        <div class="servicosCard servicosCard-1">
+          <div class="servicosCard-infos">
+            <h4 class="servicosCard-title">MASSAGEM ABHYANGA</h4>
+            <p class="servicosCard-text">
+              Desenvolvida pela medicina Ayurveda e realizada com óleos vegetais
+              e sinergias de óleos essenciais, específicos para cada Dosha.
+              Estimula a circulação e a drenagem, visando o equilíbrio físico,
+              mental e energético.
+            </p>
+            <div class="">
+              <p class="servicosCard-text">Duração: 90 min</p>
+              <h4 class="servicosCard-title">R$195,00</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="servicosCard servicosCard-1">
+          <div class="servicosCard-infos">
+            <h4 class="servicosCard-title">MASSAGEM INTEGRATIVA</h4>
+            <p class="servicosCard-text">
+              Massagem focada na parte posterior do corpo (coluna vertebral,
+              glúteos, pernas e pés). Intensa estimulação da fáscia e cadeias
+              musculares que traz um relaxamento profundo para as tensões do
+              corpo.
+            </p>
+            <div class="">
+              <p class="servicosCard-text">Duração: 60min</p>
+              <h4 class="servicosCard-title">R$189,00</h4>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="servicosCard servicosCard-2">
+          <div class="servicosCard-infos">
+            <h4 class="servicosCard-title">MASSAGEM TERAPÊUTICA</h4>
+            <p class="servicosCard-text">
+              Massagem com manobras simples, mas profundas. Proporciona
+              relaxamento corporal e mental e é realizada com óleos naturais.
+            </p>
+            <div class="">
+              <p class="servicosCard-text">Duração: 60min</p>
+              <h4 class="servicosCard-title">R$159,00</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="servicosCard servicosCard-3">
+          <div class="servicosCard-infos">
+            <h4 class="servicosCard-title mb-4">
+              MASSAGEM COM<br />
+              PEDRAS QUENTES
+            </h4>
+            <p class="servicosCard-text">
+              Terapia realizada com pedras de rios e cristais, óleos vegetais e
+              sinergia de óleos essenciais. Com manobras de massagem e colocação
+              de pedras em pontos específicos para relaxar o físico e equilibrar
+              os chacras.
+            </p>
+            <div class="">
+              <p class="servicosCard-text">Duração: 90min</p>
+              <h4 class="servicosCard-title">R$219,00</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="muitoMais">
+        <h1 class="page-title mb-4">E TEM MUITO MAIS...</h1>
+        <h3 class="page-subtitle sobre-text">Mais massagens!</h3>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <div class="data">
+                <div class="data-top">
+                  <h5 class="data-title">Massagem Integrativa</h5>
+                  <div class="data-linha"></div>
+                  <h4 class="data-preco">R$184,00</h4>
+                </div>
+                <div class="data-bottom">
+                  <p class="data-text">
+                    Massagem focada na parte posterior do corpo (coluna
+                    vertebral, glúteos, pernas e pés). Intensa estimulação da
+                    fáscia e cadeias musculares que traz um relaxamento profundo
+                    para as tensões do corpo.
+                  </p>
+                  <p class="data-tempo">60 minutos</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-12">
+              <div class="data">
+                <div class="data-top">
+                  <h5 class="data-title">Udvartana</h5>
+                  <div class="data-linha"></div>
+                  <h4 class="data-preco">R$165,00</h4>
+                </div>
+                <div class="data-bottom">
+                  <p class="data-text">
+                    Esfoliação a seco. Depurativo, redutor, ajuda na retenção de
+                    líquido e estimula a circulação sanguínea.
+                  </p>
+                  <p class="data-tempo">50 minutos</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-12">
+              <div class="data">
+                <div class="data-top">
+                  <h5 class="data-title">Reiki</h5>
+                  <div class="data-linha"></div>
+                  <h4 class="data-preco">R$130,00</h4>
+                </div>
+                <div class="data-bottom">
+                  <p class="data-text">
+                    É um método maravilhosamente simples, usando o toque com as
+                    mãos promove o relaxamento, a diminuição do stress, a
+                    recuperação da vitalidade, alívio da dor e equilíbrio
+                    energético.
+                  </p>
+                  <p class="data-tempo">60 minutos</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-12">
+              <div class="data">
+                <div class="data-top">
+                  <h5 class="data-title">Massagem de liberação miofascial</h5>
+                  <div class="data-linha"></div>
+                  <h4 class="data-preco">R$140,00</h4>
+                </div>
+                <div class="data-bottom">
+                  <p class="data-text">
+                    Podendo ser feita manualmente ou com instrumentos
+                    específicos, a Liberação Miofascial restabelece o equilíbrio
+                    muscular, aliviando a dor, liberando pontos gatilhos e
+                    melhorando o movimento. Realizada por fisioterapeuta.
+                  </p>
+                  <div class="">
+                    <p class="data-tempo">60 minutos</p>
+                    <h4 class="data-preco">R$170,00</h4>
+                    <p class="data-tempo">90 minutos</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="col-md-6 col-12">
+              <div class="data">
+                <div class="data-top">
+                  <h5 class="data-title">Padhabyanga</h5>
+                  <div class="data-linha"></div>
+                  <h4 class="data-preco">R$98,00</h4>
+                </div>
+                <div class="data-bottom">
+                  <p class="data-text">
+                    Massagem nos pés. Pressão em pontos energéticos dos pés,
+                    utilizando ferramentas de apoio. Ideal para amenizar a
+                    insônia, fadiga e câimbras.
+                  </p>
+                  <p class="data-tempo">35 minutos</p>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="col-md-6 col-12">
+              <div class="data">
+                <div class="data-top">
+                  <h5 class="data-title">Massagem Shiroabhyanga</h5>
+                  <div class="data-linha"></div>
+                  <h4 class="data-preco">R$100,00</h4>
+                </div>
+                <div class="data-bottom">
+                  <p class="data-text">
+                    Massagem localizada na parte superior das costas, cabeça e
+                    rosto. Beneficiando a circulação facial, revigora a mente e
+                    libera a fadiga.
+                  </p>
+                  <div class="">
+                    <p class="data-tempo">30 minutos</p>
+                    <h4 class="data-preco">R$180,00</h4>
+                    <p class="data-tempo">60 minutos</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-12">
+              <div class="data">
+                <div class="data-top">
+                  <h5 class="data-title">Harmonização dos chacras</h5>
+                  <div class="data-linha"></div>
+                  <h4 class="data-preco">R$130,00</h4>
+                </div>
+                <div class="data-bottom">
+                  <p class="data-text">
+                    Os Chacras são centros sutis do nosso corpo, alinhados ao
+                    longo da coluna vertebral. Por meio da interação entre as
+                    vibrações dos cristais e das energias sutis do corpo se pode
+                    restabelecer o equilíbrio e harmonia do corpo.
+                  </p>
+                  <p class="data-tempo">60 minutos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tratamentoPes">
+        <h1 class="page-title mb-4">SPA DOS PÉS</h1>
+        <h3 class="page-subtitle sobre-text">
+          Tratamentos para os pés com uso de ervas medicinais e óleos vegetais e
+          essenciais.
+        </h3>
+
+        <div class="servicoTipo">
+          <div class="servicoTipo-row">
+            <div class="data">
+              <div class="data-top">
+                <h5 class="data-title">Cuidado com os Pés</h5>
+                <div class="data-linha"></div>
+                <h4 class="data-preco">R$98,00</h4>
+              </div>
+              <div class="data-bottom">
+                <p class="data-text">Escalda pés, esfoliação e hidratação.</p>
+                <p class="data-tempo">30 minutos</p>
+              </div>
+            </div>
+
+            <div class="data">
+              <div class="data-top">
+                <h5 class="data-title">Escalda Pés</h5>
+                <div class="data-linha"></div>
+                <h4 class="data-preco">R$93,00</h4>
+              </div>
+              <div class="data-bottom">
+                <p class="data-text">
+                  O escalda pés é realizado em dois recipientes de pedra, onde é
+                  colocado água morna, água gelada ou banho de contraste junto
+                  com o saquinho aromático. Temos diversos escalda pés
+                  preparados com ervas medicinais e especiarias (flor de
+                  lavanda, hortelã, capim limão, alecrim, entre outros).
+                </p>
+                <p class="data-tempo">45 minutos</p>
+              </div>
+            </div>
+
+            <div class="data">
+              <div class="data-top">
+                <h5 class="data-title">Reflexologia Podal</h5>
+                <div class="data-linha"></div>
+                <h4 class="data-preco">R$98,00</h4>
+              </div>
+              <div class="data-bottom">
+                <p class="data-text">
+                  Técnica de pressão sobre pontos específicos dos pés
+                  relacionados a várias partes do corpo, trazendo bem estar e
+                  relaxamento.
+                </p>
+                <p class="data-tempo">30 minutos</p>
+              </div>
+            </div>
+
+            <div class="data">
+              <div class="data-top">
+                <h5 class="data-title">
+                  Tratamento para Pernas e Pés cansados
+                </h5>
+                <div class="data-linha"></div>
+                <h4 class="data-preco">R$172,00</h4>
+              </div>
+              <div class="data-bottom">
+                <p class="data-text">
+                  Uma seleção especial para você: esfoliação pernas e pés,
+                  escalda pés, reflexologia, hidratação profunda dos pés.
+                </p>
+                <p class="data-tempo">90 minutos</p>
+              </div>
+            </div>
+
+            <div class="data">
+              <div class="data-top">
+                <h5 class="data-title">Padhabyanga</h5>
+                <div class="data-linha"></div>
+                <h4 class="data-preco">R$98,00</h4>
+              </div>
+              <div class="data-bottom">
+                <p class="data-text">
+                  Massagem nos pés. Pressão em pontos energéticos dos pés,
+                  utilizando ferramentas de apoio. Ideal para amenizar a
+                  insônia, fadiga e câimbras.
+                </p>
+                <p class="data-tempo">35 minutos</p>
+              </div>
+            </div>
+          </div>
+
+          <img src="./images/spa/sofa.jpeg" alt="" class="servicoTipo-img" />
+        </div>
+      </div>
+
+      <div class="tratamentoCorpo">
+        <h1 class="page-title mb-4">TRATAMENTOS CORPORAIS</h1>
+        <h3 class="page-subtitle sobre-text">
+          O tratamento que o seu corpo precisa!
+        </h3>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <div class="data">
+                <div class="data-top">
+                  <h5 class="data-title">Hidromassagem</h5>
+                  <div class="data-linha"></div>
+                  <h4 class="data-preco">R$119,00</h4>
+                </div>
+                <div class="data-bottom">
+                  <p class="data-text">
+                    Banhos desenvolvidos com ervas medicinais e sais para cada
+                    necessidade. Nossa hidromassagem possui cromoterapia e Air
+                    Blower, um sistema de bolhas de ar que ativam a circulação.
+                  </p>
+                  <p class="data-tempo">30 minutos</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-12">
+              <div class="data">
+                <div class="data-top">
+                  <h5 class="data-title">Sauna</h5>
+                  <div class="data-linha"></div>
+                  <h4 class="data-preco">R$98,00</h4>
+                </div>
+                <div class="data-bottom">
+                  <p class="data-text">
+                    Utilização da sauna úmida por até 30 minutos
+                  </p>
+                  <p class="data-tempo">30 minutos</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-12">
+              <div class="data">
+                <div class="data-top">
+                  <h5 class="data-title">Esfoliações Corporais</h5>
+                  <div class="data-linha"></div>
+                  <h4 class="data-preco">R$149,00</h4>
+                </div>
+                <div class="data-bottom">
+                  <p class="data-text">
+                    Tratamentos corporais utilizando conceitos naturais de
+                    cuidados e técnicas diferenciadas. Na esfoliação promovemos
+                    a remoção das células mortas e ativação da circulação.
+                    Realizada com sais, óleos vegetais e essenciais, agindo como
+                    antioxidante.
+                  </p>
+                  <p class="data-tempo">60 minutos</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-12">
+              <div class="data">
+                <div class="data-top">
+                  <h5 class="data-title">Drenagem Linfática</h5>
+                  <div class="data-linha"></div>
+                  <h4 class="data-preco">R$137,00</h4>
+                </div>
+                <div class="data-bottom">
+                  <p class="data-text">
+                    Massagem muito confortável com movimentos suaves que
+                    auxiliam o retorno da linfa. Indicada para alívio de cansaço
+                    nas pernas, pós cirúrgico, gestantes e qualquer situação de
+                    edema (inchaço).
+                  </p>
+                  <p class="data-tempo">60 minutos</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-12">
+              <div class="data">
+                <div class="data-top">
+                  <h5 class="data-title">Massagem Modeladora</h5>
+                  <div class="data-linha"></div>
+                  <h4 class="data-preco">R$147,00</h4>
+                </div>
+                <div class="data-bottom">
+                  <p class="data-text">
+                    Massagem forte e vigorosa, feita com as mãos de forma a
+                    ativar a circulação sanguínea. Ajuda a eliminar impurezas e
+                    é indicada para quem busca diminuir medidas e melhorar o
+                    aspecto da celulite.
+                  </p>
+                  <p class="data-tempo">60 minutos</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-12">
+              <div class="data">
+                <div class="data-top">
+                  <h5 class="data-title">Massagem Dreno Detox</h5>
+                  <div class="data-linha"></div>
+                  <h4 class="data-preco">R$147,00</h4>
+                </div>
+                <div class="data-bottom">
+                  <p class="data-text">
+                    Técnica de pressão firme e ritmo acelerado, com bombeamentos
+                    e manobras exclusivas. Objetivo: eliminar toxinas e excesso
+                    de líquidos, combate à celulite, regeneração de tecidos.
+                    Deixa o seu corpo menos inchado e torneado.
+                  </p>
+                  <p class="data-tempo">60 minutos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="servicoTipo servicoTipo-inver">
+          <img src="./images/spa/banheira.jpeg" alt="" class="servicoTipo-img" />
+
+          <div class="servicoTipo-row">
+            <div class="data">
+              <div class="data-top">
+                <h5 class="data-title">Hidromassagem</h5>
+                <div class="data-linha"></div>
+                <h4 class="data-preco">R$119,00</h4>
+              </div>
+              <div class="data-bottom">
+                <p class="data-text">
+                  Banhos desenvolvidos com ervas medicinais e sais para cada
+                  necessidade. Nossa hidromassagem possui cromoterapia e Air
+                  Blower, um sistema de bolhas de ar que ativam a circulação.
+                </p>
+                <p class="data-tempo">30 minutos</p>
+              </div>
+            </div>
+
+            <div class="data">
+              <div class="data-top">
+                <h5 class="data-title">Sauna</h5>
+                <div class="data-linha"></div>
+                <h4 class="data-preco">R$98,00</h4>
+              </div>
+              <div class="data-bottom">
+                <p class="data-text">
+                  Utilização da sauna úmida por até 30 minutos
+                </p>
+                <p class="data-tempo">30 minutos</p>
+              </div>
+            </div>
+
+            <div class="data">
+              <div class="data-top">
+                <h5 class="data-title">Esfoliações Corporais</h5>
+                <div class="data-linha"></div>
+                <h4 class="data-preco">R$149,00</h4>
+              </div>
+              <div class="data-bottom">
+                <p class="data-text">
+                  Tratamentos corporais utilizando conceitos naturais de
+                  cuidados e técnicas diferenciadas. Na esfoliação promovemos a
+                  remoção das células mortas e ativação da circulação. Realizada
+                  com sais, óleos vegetais e essenciais, agindo como
+                  antioxidante.
+                </p>
+                <p class="data-tempo">60 minutos</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="spaDay">
+        <h1 class="page-title mb-4">DAY SPA</h1>
+        <h3 class="page-subtitle sobre-text">
+          Aqui nesta opção você passa algumas horas de calma e relaxamento com o
+          que há de melhor no nosso Spa.
+        </h3>
+
+        <div class="servicoTipo" style="margin: 5rem auto 0">
+          <div class="servicoTipo-row">
+            <h2 class="servicoTipo-title">DAY SPA - 2 HORAS</h2>
+            <div class="data">
+              <div class="data-top">
+                <h5 class="data-title">Renovação</h5>
+                <div class="data-linha"></div>
+                <h4 class="data-preco">R$295,00</h4>
+              </div>
+              <div class="data-bottom">
+                <p class="data-text">
+                  Esfoliação corporal.<br />
+                  Ducha energizante.<br />
+                  Massagem relaxante com hidratação corporal.
+                </p>
+                <p class="data-tempo"></p>
+              </div>
+            </div>
+
+            <div class="data">
+              <div class="data-top">
+                <h5 class="data-title">Conforto</h5>
+                <div class="data-linha"></div>
+                <h4 class="data-preco">R$329,00</h4>
+              </div>
+              <div class="data-bottom">
+                <p class="data-text">
+                  Hidromassagem.<br />
+                  Massagem anti-stress na região pescoço-cervical-face.<br />
+                  Massagem terapêutica completa.
+                </p>
+                <p class="data-tempo"></p>
+              </div>
+            </div>
+
+            <div class="data">
+              <div class="data-top">
+                <h5 class="data-title">Recuperação Muscular</h5>
+                <div class="data-linha"></div>
+                <h4 class="data-preco">R$248,00</h4>
+              </div>
+              <div class="data-bottom">
+                <p class="data-text">
+                  Sauna.<br />
+                  Massagem de liberação miofascial (ventosa e dry needling).
+                </p>
+                <p class="data-tempo"></p>
+              </div>
+            </div>
+          </div>
+
+          <img
+            src="./images/spa/pedras.png"
+            alt=""
+            class="servicoTipo-img servicoTipo-img-spaDay"
+          />
+        </div>
+
+        <div class="servicoTipo">
+          <img
+            src="./images/spa/massagem.jpeg"
+            alt=""
+            class="servicoTipo-img servicoTipo-img-spaDay"
+          />
+
+          <div class="servicoTipo-row">
+            <h2 class="servicoTipo-title">DAY SPA - 3 HORAS</h2>
+            <div class="data">
+              <div class="data-top">
+                <h5 class="data-title">Sereno</h5>
+                <div class="data-linha"></div>
+                <h4 class="data-preco">R$475,00</h4>
+              </div>
+              <div class="data-bottom">
+                <p class="data-text">
+                  Sauna.<br />
+                  Esfoliação corporal.<br />
+                  Hidromassagem.<br />
+                  Massagem terapêutica.
+                </p>
+                <p class="data-tempo"></p>
+              </div>
+            </div>
+
+            <div class="data">
+              <div class="data-top">
+                <h5 class="data-title">Bálsamo</h5>
+                <div class="data-linha"></div>
+                <h4 class="data-preco">R$439,00</h4>
+              </div>
+              <div class="data-bottom">
+                <p class="data-text">
+                  Sauna.<br />
+                  Hidromassagem.<br />
+                  Massagem para pernas cansadas.<br />
+                  Massagem alívio de dor na região da coluna.<br />
+                  Máscara facial de argila com hidratação.
+                </p>
+                <p class="data-tempo"></p>
+              </div>
+            </div>
+
+            <h2 class="servicoTipo-title">DAY SPA - 4 HORAS</h2>
+
+            <div class="data">
+              <div class="data-top">
+                <h5 class="data-title">Pleno</h5>
+                <div class="data-linha"></div>
+                <h4 class="data-preco">R$590,00</h4>
+              </div>
+              <div class="data-bottom">
+                <p class="data-text">
+                  Sauna.<br />
+                  Hidromassagem.<br />
+                  Esfoliação corporal completa.<br />
+                  Massagem terapêutica com liberação miofascial.<br />
+                  Máscara facial hidratante.
+                </p>
+                <p class="data-tempo"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="casalSpaDay">
+        <h1 class="page-title mb-4">DAY SPA CASAL</h1>
+        <h3 class="page-subtitle sobre-text">
+          Nada melhor do que passar um tempo relaxando no Spa com quem você
+          ama.<br />
+          Também temos opção Day spa amigas, irmãs, mãe e filha!
+        </h3>
+
+        <div class="servicoTipo">
+          <div class="servicoTipo-row">
+            <div class="data">
+              <div class="data-top">
+                <h5 class="data-title">Day SPA Casal - 3 horas</h5>
+                <div class="data-linha"></div>
+                <h4 class="data-preco">R$549,00</h4>
+              </div>
+              <div class="data-bottom">
+                <p class="data-text">
+                  Uma seleção de terapias montada especialmente para o casal,
+                  combinando sauna, hidromassagem e uma massagem relaxante para
+                  cada um. Também irão aproveitar uma deliciosa pausa gourmet
+                  (chá, castanhas e frutas).
+                </p>
+                <p class="data-tempo"></p>
+              </div>
+            </div>
+          </div>
+
+          <img src="./images/spa/camas2.jpeg" alt="" class="servicoTipo-img" />
+        </div>
+      </div>
+
+      <div class="slimSpaDay">
+        <h1 class="page-title mb-4">DAY SPA SLIM</h1>
+        <h3 class="page-subtitle sobre-text">Emagrecimento e Drenagem.</h3>
+
+        <div class="servicoTipo servicoTipo-inver">
+          <img src="./images/spa/buda.jpeg" alt="" class="servicoTipo-img" />
+
+          <div class="servicoTipo-row">
+            <div class="data" style="margin-bottom: 1rem">
+              <div class="data-top">
+                <h5 class="data-title">Fluir</h5>
+                <div class="data-linha"></div>
+                <h4 class="data-preco">R$220,00</h4>
+              </div>
+              <div class="data-bottom">
+                <p class="data-text">
+                  Sauna.<br />
+                  Drenagem linfática.
+                </p>
+                <p class="data-tempo">90 minutos</p>
+              </div>
+            </div>
+
+            <div class="data" style="margin-bottom: 1rem">
+              <div class="data-top">
+                <h5 class="data-title">Turbo</h5>
+                <div class="data-linha"></div>
+                <h4 class="data-preco">R$249,00</h4>
+              </div>
+              <div class="data-bottom">
+                <p class="data-text">
+                  Banheira de hidromassagem com airblow.<br />
+                  Massagem drenodetox.
+                </p>
+                <p class="data-tempo">100 minutos</p>
+              </div>
+            </div>
+
+            <div class="data" style="margin-bottom: 1rem">
+              <div class="data-top">
+                <h5 class="data-title">Sculpt</h5>
+                <div class="data-linha"></div>
+                <h4 class="data-preco">R$345,00</h4>
+              </div>
+              <div class="data-bottom">
+                <p class="data-text">
+                  Sauna.<br />
+                  Argiloterapia.<br />
+                  Massagem drenodetox.
+                </p>
+                <p class="data-tempo">120 minutos</p>
+              </div>
+            </div>
+
+            <div class="data" style="margin-bottom: 1rem">
+              <div class="data-top">
+                <h5 class="data-title">Super Shape</h5>
+                <div class="data-linha"></div>
+                <h4 class="data-preco">R$390,00</h4>
+              </div>
+              <div class="data-bottom">
+                <p class="data-text">
+                  Sauna.<br />
+                  Esfoliação corporal completa.<br />
+                  Ducha.<br />
+                  Massagem modeladora ou drenagem linfática.
+                </p>
+                <p class="data-tempo">160 minutos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="Noiva">
+        <h1 class="page-title mb-4">DIA DA NOIVA</h1>
+        <h3 class="page-subtitle sobre-text">
+          O Spa proporciona a noiva um dia muito especial.
+        </h3>
+
+        <div class="servicoTipo">
+          <div class="servicoTipo-row">
+            <div class="data">
+              <div class="data-top">
+                <h5 class="data-title">Campo de Tulipas</h5>
+                <div class="data-linha"></div>
+                <h4 class="data-preco">R$600,00</h4>
+              </div>
+              <div class="data-bottom">
+                <p class="data-text">
+                  Sauna. <br />
+                  Esfoliação pernas e pés.<br />
+                  Massagem relaxante.<br />
+                </p>
+                <p class="data-tempo">2 horas</p>
+              </div>
+            </div>
+
+            <div class="data">
+              <div class="data-top">
+                <h5 class="data-title">Jardim de Rosas</h5>
+                <div class="data-linha"></div>
+                <h4 class="data-preco">R$900,00</h4>
+              </div>
+              <div class="data-bottom">
+                <p class="data-text">
+                  Sauna. <br />
+                  Esfoliação corporal relaxante.<br />
+                  Escalda pés.<br />
+                  Massagem com pedras quentes.<br />
+                  Pausa Gourmet.
+                </p>
+                <p class="data-tempo">3 horas</p>
+              </div>
+            </div>
+
+            <div class="data">
+              <div class="data-top">
+                <h5 class="data-title">Pimenta Rosa</h5>
+                <div class="data-linha"></div>
+                <h4 class="data-preco">R$1.350,00</h4>
+              </div>
+              <div class="data-bottom">
+                <p class="data-text">
+                  Sauna. <br />
+                  Esfoliação corporal.<br />
+                  Banho perfumado.<br />
+                  Massagem com Bambu (Bambuterapia).<br />
+                  Led Azul.<br />
+                  Pausa Gourmet.
+                </p>
+                <p class="data-tempo">4 horas</p>
+              </div>
+            </div>
+          </div>
+
+          <img src="./images/spa/pier.jpeg" alt="" class="servicoTipo-img" />
+        </div>
+      </div>
+
+      <h1 class="page-title mb-4">EXISTE TAMBÉM OUTRAS OPÇÕES</h1>
+      <h3 class="page-subtitle sobre-text">
+        Você também pode montar seu Day Spa de acordo com suas preferências.<br />
+        Você escolhe seus procedimentos.<br />
+      </h3>
+
+      <a
+        target="_blank"
+        href="https://api.whatsapp.com/send?phone=5519971022560"
+        class="button sobre-button"
+        >Contato</a
+      >
+    </section>
+
+    <img src="./images/spa/fundoBaixo3.png" alt="" class="imagemFinal" />
+
+    <section class="footer">
+      <img src="./images/spa/logo.png" alt="" class="mb-4 footer-img" />
+      <p class="footer-text">
+        <span class="lnr lnr-map-marker" style="padding-right: 5px"></span>Rua
+        Freesias, 120 | Holambra
+      </p>
+      <h3 class="page-subtitle sobre-text">
+        Todos os direitos reservados,
+        <span style="font-weight: 700">Marina Macarini</span>.
+      </h3>
+
+      <a
+        target="_blank"
+        href="https://api.whatsapp.com/send?phone=5519971022560"
+        class="button sobre-button"
+        >Contato</a
+      >
+    </section>
+  </body>
+
+  <!-- JS Bootstrap -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- JS para o menu fechar -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(".mobileNav-item").click(function () {
+      $(".mobileNav-checkbox").click();
+    });
+  </script>
+</html>

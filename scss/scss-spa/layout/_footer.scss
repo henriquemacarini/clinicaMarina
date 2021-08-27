@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 5rem 10rem;
+
+  background-image: url("../images/spa/fundo3.png");
+  background-size: cover;
+
+  background-color: $fundo-branco;
+
+  &-img {
+    width: 20rem;
+  }
+}
