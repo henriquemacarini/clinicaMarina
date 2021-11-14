@@ -681,6 +681,18 @@ body {
   border: 4px solid #9c7cc6;
   border-radius: 5px;
 }
+.servicoTipo-img-noiva {
+  height: 70rem;
+  width: 35rem;
+  border: 4px solid #9c7cc6;
+  border-radius: 5px;
+}
+.servicoTipo-img-casal {
+  height: 40rem;
+  width: 20rem;
+  border: 4px solid #9c7cc6;
+  border-radius: 5px;
+}
 @media (max-width: 75em) {
   .servicoTipo-img {
     margin-bottom: 10rem;

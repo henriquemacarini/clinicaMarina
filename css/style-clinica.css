@@ -120,10 +120,11 @@ body {
 
 .section-text {
   font-family: Roboto;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 2.1rem;
+  line-height: 2.9rem;
+  text-align: left;
   letter-spacing: 0em;
 }
 
@@ -252,6 +253,25 @@ body {
 }
 .equipe-boximg-9 {
   background-image: url(../images/clinica/fatima.jpeg);
+}
+.equipe-boximg-10 {
+  background-image: url(../images/clinica/bianca.jpeg);
+}
+.equipe-boximg-11 {
+  background-image: url(../images/clinica/leo.jpeg);
+}
+.equipe-boximg-12 {
+  background-image: url(../images/clinica/priscila.jpeg);
+}
+.equipe-boximg-13 {
+  background-image: url(../images/clinica/leticia.jpeg);
+}
+.equipe-boximg-14 {
+  background-image: url(../images/clinica/marina2.jpeg);
+}
+.slick-next:before,
+.slick-prev:before {
+  font-size: 3.5rem;
 }
 
 .header {
@@ -396,14 +416,15 @@ body {
 }
 .card-item-text {
   font-family: Roboto;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 1.6rem;
+  line-height: 2rem;
   letter-spacing: 0em;
   text-align: center;
   color: #8ab596;
   padding: 0 10rem;
+  height: 16rem;
 }
 .card-item-last {
   width: 50%;
