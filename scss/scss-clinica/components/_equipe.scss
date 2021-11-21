@@ -60,5 +60,24 @@
     &-9 {
       background-image: url(../images/clinica/fatima.jpeg);
     }
+    &-10 {
+      background-image: url(../images/clinica/bianca.jpeg);
+    }
+    &-11 {
+      background-image: url(../images/clinica/leo.jpeg);
+    }
+    &-12 {
+      background-image: url(../images/clinica/priscila.jpeg);
+    }
+    &-13 {
+      background-image: url(../images/clinica/leticia.jpeg);
+    }
+    &-14 {
+      background-image: url(../images/clinica/marina2.jpeg);
+    }
   }
+}
+.slick-next:before,
+.slick-prev:before {
+  font-size: 3.5rem;
 }

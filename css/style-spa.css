@@ -230,7 +230,7 @@ body {
   line-height: 2rem;
   color: #472065;
   text-align: left;
-  flex: 2;
+  flex: 4;
 }
 .data-tempo {
   font-family: Roboto;

@@ -50,18 +50,31 @@
     }
     &-text {
       font-family: Roboto;
-      font-size: 1.4rem;
+      font-size: 1.7rem;
       font-style: normal;
       font-weight: 500;
-      line-height: 1.6rem;
+      line-height: 2rem;
       letter-spacing: 0em;
       text-align: center;
       color: $verde-claro;
       padding: 0 10rem;
+      height: 16rem;
     }
 
     &-last {
       width: 50%;
+      &-item {
+        font-family: Roboto;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2rem;
+        letter-spacing: 0em;
+        text-align: center;
+        color: $verde-claro;
+        padding: 0 10rem;
+        height: 16rem;
+      }
     }
   }
 }

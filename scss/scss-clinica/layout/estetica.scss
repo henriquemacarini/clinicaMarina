@@ -33,9 +33,11 @@
     border: 0.5rem solid $verde-escuro;
     border-radius: 1rem;
     background-size: cover;
-    background-image: url("../images/clinica/oleo.png");
     width: 40rem;
     height: 40rem;
     box-shadow: 0 1rem 1rem rgba($color: #000000, $alpha: 0.3);
+    &-1 {
+      background-image: url("../images/clinica/facialFisio.jpg");
+    }
   }
 }

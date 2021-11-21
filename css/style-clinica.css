@@ -269,6 +269,7 @@ body {
 .equipe-boximg-14 {
   background-image: url(../images/clinica/marina2.jpeg);
 }
+
 .slick-next:before,
 .slick-prev:before {
   font-size: 3.5rem;
@@ -335,10 +336,12 @@ body {
   border: 0.5rem solid #55785e;
   border-radius: 1rem;
   background-size: cover;
-  background-image: url("../images/clinica/oleo.png");
   width: 40rem;
   height: 40rem;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+.estetica-img-1 {
+  background-image: url("../images/clinica/facialFisio.jpg");
 }
 
 .main {
@@ -416,7 +419,7 @@ body {
 }
 .card-item-text {
   font-family: Roboto;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-style: normal;
   font-weight: 500;
   line-height: 2rem;
@@ -428,6 +431,18 @@ body {
 }
 .card-item-last {
   width: 50%;
+}
+.card-item-last-item {
+  font-family: Roboto;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #8ab596;
+  padding: 0 10rem;
+  height: 16rem;
 }
 
 .sobrenos {
@@ -524,6 +539,42 @@ body {
   font-size: 4.8rem;
 }
 .spa-text {
+  color: #55785e;
+  font-size: 1.8rem;
+  margin: 2rem 0 3rem;
+}
+
+.marina {
+  padding: 8rem;
+  text-align: center;
+  background-size: cover;
+  background-image: url("../images/clinica/fundo4.png");
+}
+.marina-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  margin-top: 4rem;
+}
+.marina-img {
+  border: 0.5rem solid #8ab596;
+  border-radius: 1rem;
+  background-size: cover;
+  background-image: url("../images/clinica/marina.jpg");
+  width: 30rem;
+  height: 50rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+.marina-info {
+  text-align: left;
+  flex: 0.9;
+}
+.marina-title {
+  color: #55785e;
+  font-size: 4.8rem;
+}
+.marina-text {
   color: #55785e;
   font-size: 1.8rem;
   margin: 2rem 0 3rem;
