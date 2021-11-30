@@ -12,7 +12,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap-reverse;
   }
 
   &-textos {
@@ -65,5 +64,32 @@
       left: 2rem;
       background-image: url("../images/clinica/foto3.png");
     }
+    @include respons(tablet) {
+      &-1 {
+        width: 20rem;
+        height: 20rem;
+      }
+      &-2 {
+        width: 15rem;
+        height: 30rem;
+      }
+      &-3 {
+        width: 10rem;
+        height: 10rem;
+      }
+    }
+  }
+}
+
+@include respons(tablet) {
+  .sobrenos-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .sobrenos-text {
+    text-align: center !important;
+  }
+  .galeria {
+    margin-top: 5rem;
   }
 }

@@ -10,6 +10,9 @@
     align-items: center;
     gap: 8rem;
     margin-top: 8rem;
+    @include respons(tablet) {
+      flex-direction: column-reverse;
+    }
   }
 
   &-img {
@@ -33,5 +36,16 @@
     color: $verde-escuro;
     font-size: 1.8rem;
     margin: 2rem 0 3rem;
+  }
+  @include respons(tablet) {
+    .spa-info,
+    .spa-title,
+    .spa-text {
+      text-align: center;
+    }
+    .spa-img {
+      width: 40rem;
+      height: 27rem;
+    }
   }
 }

@@ -29,33 +29,77 @@
 <body>
   <section class="main" id="main">
     <img src="./images/clinica/main.png" alt="Clinica" class="main-foto" />
-    <div class="header">
-      <ul class="header-list">
-        <li class="header-item">
-          <a href="#main" class="header-link">Início</a>
+
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a href="#main" class="navigation-link">Início</a>
         </li>
-        <li class="header-item">
-          <a href="#sobrenos" class="header-link">Sobre nós</a>
+        <li class="navigation-item">
+          <a href="#sobrenos" class="navigation-link">Sobre nós</a>
         </li>
-        <li class="header-item">
-          <a href="#fisioterapia" class="header-link">Fisioterapia</a>
+        <li class="navigation-item">
+          <a href="#fisioterapia" class="navigation-link">Fisioterapia</a>
         </li>
-        <li class="header-item">
-          <a href="./spa.html" target="_blanck" class="header-link">Spa</a>
+        <li class="navigation-item">
+          <a href="./spa.html" target="_blanck" class="navigation-link">Spa</a>
         </li>
-        <li class="header-item">
-          <a href="#estetica" class="header-link">Estética</a>
+        <li class="navigation-item">
+          <a href="#estetica" class="navigation-link">Estética</a>
         </li>
-        <li class="header-item">
-          <a href="" class="header-link">Localização</a>
+        <li class="navigation-item">
+          <a href="" class="navigation-link">Localização</a>
         </li>
-        <li class="header-item">
+        <li class="navigation-item">
           <div class="button f-branco">
             <a target="_blanck" href="https://api.whatsapp.com/send?phone=5519971022560"
               class="button-text button-text-verde c-verde">Contato</a>
           </div>
         </li>
       </ul>
+    </nav>
+
+    <div class="navigationMobile">
+      <!-- <img src="./images/spa/logo.png" alt="Spa Marina Macarini" class="navigationMobile-logo" /> -->
+
+      <nav class="mobileNav">
+        <input type="checkbox" class="mobileNav-checkbox" id="navi-toggle" />
+
+        <label for="navi-toggle" class="mobileNav-button">
+          <span class="lnr lnr-menu mobileNav-icon">&nbsp;</span>
+        </label>
+
+        <div class="mobileNav-background" id="mobileNav-background">
+          &nbsp;
+        </div>
+
+        <div class="mobileNav-nav">
+          <ul class="mobileNav-list">
+            <li class="mobileNav-item">
+              <a href="#main" class="mobileNav-link" onclick="algo()">Início</a>
+            </li>
+            <li class="mobileNav-item">
+              <a href="#sobrenos" class="mobileNav-link" onclick="algo()">Sobre nós</a>
+            </li>
+            <li class="mobileNav-item">
+              <a href="#fisioterapia" class="mobileNav-link" onclick="algo()">Fisioterapia</a>
+            </li>
+            <li class="mobileNav-item">
+              <a href="./spa.html" class="mobileNav-link" onclick="algo()">Spa</a>
+            </li>
+            <li class="mobileNav-item">
+              <a href="#estetica" class="mobileNav-link" onclick="algo()">Estética</a>
+            </li>
+            <li class="mobileNav-item">
+              <a href="#fisioterapia" class="mobileNav-link" onclick="algo()">Localização</a>
+            </li>
+            <li class="mobileNav-item">
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=5519971022560"
+                class="mobileNav-link">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
 
     <div class="main-area">
@@ -310,7 +354,7 @@
 
     <div class="card">
       <div class="card-container">
-        <div class="card-row">
+        <div class="card-column">
           <div class="card-item">
             <div class="card-item-title">Fisioterapia</div>
             <div class="card-item-text">
@@ -340,7 +384,7 @@
         </div>
 
         <div class="card-linha"></div>
-        <div class="card-row">
+        <div class="card-column">
           <div class="card-item">
             <div class="card-item-title">RPG</div>
             <div class="card-item-text">
@@ -450,11 +494,10 @@
             class="button-text button-text-branco c-branco">Conhecer</a>
         </div>
       </div>
-
       <div class="estetica-img estetica-img-1"></div>
     </div>
 
-    <div class="estetica-row">
+    <div class="estetica-row-reverse">
       <div class="estetica-img estetica-img-2"></div>
       <div class="estetica-card">
         <h1 class="estetica-card-title">
@@ -508,7 +551,6 @@
             class="button-text button-text-branco c-branco">Conhecer</a>
         </div>
       </div>
-
       <div class="estetica-img estetica-img-3"></div>
     </div>
   </section>
@@ -546,9 +588,9 @@
     </div>
   </section>
 
-  <section id="mapa">
+  <!-- <section id="mapa">
     <div class="mapa"></div>
-  </section>
+  </section> -->
 </body>
 
 <!-- Jquery -->
@@ -574,7 +616,25 @@
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
-    dots: true
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   });
 </script>
 

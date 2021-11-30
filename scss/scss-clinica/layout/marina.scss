@@ -10,6 +10,9 @@
     align-items: center;
     gap: 8rem;
     margin-top: 4rem;
+    @include respons(tablet) {
+      flex-direction: column-reverse;
+    }
   }
 
   &-img {
@@ -34,5 +37,16 @@
     color: $verde-escuro;
     font-size: 1.8rem;
     margin: 2rem 0 3rem;
+  }
+  @include respons(tablet) {
+    .marina-info,
+    .marina-title,
+    .marina-text {
+      text-align: center;
+    }
+    .marina-img {
+      width: 30rem;
+      height: 40rem;
+    }
   }
 }

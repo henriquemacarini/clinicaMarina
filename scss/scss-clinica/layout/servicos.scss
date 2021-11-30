@@ -10,19 +10,18 @@
   width: 75%;
   padding: 5rem 0;
   margin: 3rem auto;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 3rem;
   border-radius: 1rem;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 
   &-container {
     display: flex;
-    flex-wrap: wrap;
+    @include respons(tablet) {
+      flex-direction: column;
+    }
   }
 
-  &-row {
+  &-column {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -35,8 +34,9 @@
   }
 
   &-item {
-    margin-bottom: 4rem;
-    min-width: 40rem;
+    flex: 1;
+    margin-bottom: 5rem;
+    padding: 0 5rem;
     &-title {
       font-family: Roboto;
       font-size: 2.4rem;
@@ -57,12 +57,11 @@
       letter-spacing: 0em;
       text-align: center;
       color: $verde-claro;
-      padding: 0 10rem;
-      height: 16rem;
     }
 
     &-last {
-      width: 50%;
+      width: 100%;
+      margin-top: 5rem;
       &-item {
         font-family: Roboto;
         font-size: 2rem;
@@ -72,8 +71,6 @@
         letter-spacing: 0em;
         text-align: center;
         color: $verde-claro;
-        padding: 0 10rem;
-        height: 16rem;
       }
     }
   }

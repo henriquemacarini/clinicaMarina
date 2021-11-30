@@ -1,5 +1,6 @@
-.header {
+.navigation {
   margin-bottom: 10rem;
+  z-index: 1000;
 
   &-list {
     display: flex;
@@ -28,6 +29,144 @@
     &:hover {
       font-weight: bold;
       color: $main-branco;
+    }
+  }
+}
+
+.navigationMobile {
+  display: none;
+}
+
+@include respons(tablet) {
+  .navigation {
+    display: none;
+  }
+
+  .navigationMobile {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 10rem;
+
+    &-logo {
+      width: 10rem;
+    }
+  }
+
+  .mobileNav {
+    position: relative;
+    display: inline-block;
+
+    &-checkbox {
+      display: none;
+    }
+
+    &-button {
+      height: 6rem;
+      width: 6rem;
+      position: fixed;
+      right: 5rem;
+      top: 4.5rem;
+      background-color: $main-branco;
+      border-radius: 50%;
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+      text-align: center;
+      cursor: pointer;
+      z-index: 8000;
+
+      @include respons(phone) {
+        height: 5rem;
+        width: 5rem;
+      }
+    }
+
+    &-background {
+      height: 5rem;
+      width: 5rem;
+      position: fixed;
+      right: 5.5rem;
+      top: 5rem;
+      border-radius: 50%;
+      background-color: $verde-escuro;
+      transition: transform 0.8s cubic-bezier(0.65, -0.01, 0.35, 1.02);
+      z-index: 7000;
+
+      @include respons(phone) {
+        height: 3rem;
+        width: 3rem;
+      }
+    }
+
+    &-checkbox:checked ~ &-background {
+      transform: scale(70);
+    }
+
+    &-icon {
+      font-size: 3.5rem;
+      display: inline-block;
+      top: 50%;
+      left: 55%;
+      transform: translate(-50%, -50%);
+      position: relative;
+
+      @include respons(phone) {
+        font-size: 3rem;
+        top: 50%;
+        left: 55%;
+      }
+    }
+
+    &-nav {
+      height: 100vh;
+      position: fixed;
+      top: 50%;
+      left: -80%;
+      transform: translate(-50%, -50%);
+      z-index: 7500;
+      opacity: 1;
+      width: 0;
+      transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    &-list {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      list-style: none;
+      text-align: center;
+      width: 100%;
+    }
+
+    &-item {
+      &:not(:last-of-type) {
+        border-bottom: 2px solid $main-branco;
+      }
+      width: 60%;
+      margin: 3rem auto;
+      padding: 3rem 0;
+    }
+
+    &-link {
+      font-family: Roboto;
+      font-size: 3.5rem;
+      color: $main-branco;
+      text-decoration: none;
+      transition: all 0.2s;
+      line-height: 2.1rem;
+      letter-spacing: 1rem;
+
+      &:hover {
+        font-weight: bold;
+        color: $verde;
+      }
+    }
+
+    &-checkbox:checked ~ &-nav {
+      opacity: 1;
+      width: 100%;
+      left: 50%;
     }
   }
 }

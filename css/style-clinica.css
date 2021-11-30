@@ -124,7 +124,6 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 2.9rem;
-  text-align: left;
   letter-spacing: 0em;
 }
 
@@ -205,6 +204,12 @@ body {
   margin: 0 auto 3rem;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
 }
+@media (max-width: 56.25em) {
+  .equipe {
+    width: 27rem;
+    height: 45rem;
+  }
+}
 .equipe-titulo {
   margin: 8rem 0 5rem;
 }
@@ -275,19 +280,20 @@ body {
   font-size: 3.5rem;
 }
 
-.header {
+.navigation {
   margin-bottom: 10rem;
+  z-index: 1000;
 }
-.header-list {
+.navigation-list {
   display: flex;
   list-style: none;
   padding: 0;
   align-items: center;
 }
-.header-item:not(:last-child) {
+.navigation-item:not(:last-child) {
   margin-right: 4rem;
 }
-.header-link {
+.navigation-link {
   font-family: Roboto;
   font-size: 2rem;
   font-style: normal;
@@ -298,11 +304,155 @@ body {
   color: #f8fdf9;
   text-decoration: none;
 }
-.header-link:hover {
+.navigation-link:hover {
   font-weight: bold;
   color: #f8fdf9;
 }
 
+.navigationMobile {
+  display: none;
+}
+
+@media (max-width: 56.25em) {
+  .navigation {
+    display: none;
+  }
+
+  .navigationMobile {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 10rem;
+  }
+  .navigationMobile-logo {
+    width: 10rem;
+  }
+
+  .mobileNav {
+    position: relative;
+    display: inline-block;
+  }
+  .mobileNav-checkbox {
+    display: none;
+  }
+  .mobileNav-button {
+    height: 6rem;
+    width: 6rem;
+    position: fixed;
+    right: 5rem;
+    top: 4.5rem;
+    background-color: #f8fdf9;
+    border-radius: 50%;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    text-align: center;
+    cursor: pointer;
+    z-index: 8000;
+  }
+}
+@media (max-width: 56.25em) and (max-width: 37.5em) {
+  .mobileNav-button {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .mobileNav-background {
+    height: 5rem;
+    width: 5rem;
+    position: fixed;
+    right: 5.5rem;
+    top: 5rem;
+    border-radius: 50%;
+    background-color: #55785e;
+    transition: transform 0.8s cubic-bezier(0.65, -0.01, 0.35, 1.02);
+    z-index: 7000;
+  }
+}
+@media (max-width: 56.25em) and (max-width: 37.5em) {
+  .mobileNav-background {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .mobileNav-checkbox:checked ~ .mobileNav-background {
+    transform: scale(70);
+  }
+}
+@media (max-width: 56.25em) {
+  .mobileNav-icon {
+    font-size: 3.5rem;
+    display: inline-block;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    position: relative;
+  }
+}
+@media (max-width: 56.25em) and (max-width: 37.5em) {
+  .mobileNav-icon {
+    font-size: 3rem;
+    top: 50%;
+    left: 55%;
+  }
+}
+@media (max-width: 56.25em) {
+  .mobileNav-nav {
+    height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: -80%;
+    transform: translate(-50%, -50%);
+    z-index: 7500;
+    opacity: 1;
+    width: 0;
+    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+@media (max-width: 56.25em) {
+  .mobileNav-list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+    width: 100%;
+  }
+}
+@media (max-width: 56.25em) {
+  .mobileNav-item {
+    width: 60%;
+    margin: 3rem auto;
+    padding: 3rem 0;
+  }
+  .mobileNav-item:not(:last-of-type) {
+    border-bottom: 2px solid #f8fdf9;
+  }
+}
+@media (max-width: 56.25em) {
+  .mobileNav-link {
+    font-family: Roboto;
+    font-size: 3.5rem;
+    color: #f8fdf9;
+    text-decoration: none;
+    transition: all 0.2s;
+    line-height: 2.1rem;
+    letter-spacing: 1rem;
+  }
+  .mobileNav-link:hover {
+    font-weight: bold;
+    color: #7fad8c;
+  }
+}
+@media (max-width: 56.25em) {
+  .mobileNav-checkbox:checked ~ .mobileNav-nav {
+    opacity: 1;
+    width: 100%;
+    left: 50%;
+  }
+}
 .estetica {
   background-image: url("../images/clinica/fundo3.png");
   background-size: cover;
@@ -313,8 +463,23 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
   margin: 8rem auto 5rem;
+}
+@media (max-width: 56.25em) {
+  .estetica-row {
+    flex-direction: column;
+  }
+}
+.estetica-row-reverse {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 8rem auto 5rem;
+}
+@media (max-width: 56.25em) {
+  .estetica-row-reverse {
+    flex-direction: column-reverse;
+  }
 }
 .estetica-card {
   background-color: #f8fdf9;
@@ -322,6 +487,11 @@ body {
   padding: 3rem 8rem;
   border-radius: 1rem;
   width: 60rem;
+}
+@media (max-width: 56.25em) {
+  .estetica-card {
+    width: 100%;
+  }
 }
 .estetica-card-title {
   font-size: 2.4rem;
@@ -339,6 +509,11 @@ body {
   width: 40rem;
   height: 40rem;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 56.25em) {
+  .estetica-img {
+    margin-top: 8rem;
+  }
 }
 .estetica-img-1 {
   background-image: url("../images/clinica/facialFisio.jpg");
@@ -374,6 +549,11 @@ body {
   left: 90%;
   height: 100vh;
 }
+@media (max-width: 75em) {
+  .main-foto {
+    display: none;
+  }
+}
 
 .mapa {
   background-image: url("../images/clinica/Map.png");
@@ -395,18 +575,19 @@ body {
   width: 75%;
   padding: 5rem 0;
   margin: 3rem auto;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 3rem;
   border-radius: 1rem;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 .card-container {
   display: flex;
-  flex-wrap: wrap;
 }
-.card-row {
+@media (max-width: 56.25em) {
+  .card-container {
+    flex-direction: column;
+  }
+}
+.card-column {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -417,8 +598,9 @@ body {
   height: auto;
 }
 .card-item {
-  margin-bottom: 4rem;
-  min-width: 40rem;
+  flex: 1;
+  margin-bottom: 5rem;
+  padding: 0 5rem;
 }
 .card-item-title {
   font-family: Roboto;
@@ -440,11 +622,10 @@ body {
   letter-spacing: 0em;
   text-align: center;
   color: #8ab596;
-  padding: 0 10rem;
-  height: 16rem;
 }
 .card-item-last {
-  width: 50%;
+  width: 100%;
+  margin-top: 5rem;
 }
 .card-item-last-item {
   font-family: Roboto;
@@ -455,8 +636,6 @@ body {
   letter-spacing: 0em;
   text-align: center;
   color: #8ab596;
-  padding: 0 10rem;
-  height: 16rem;
 }
 
 .sobrenos {
@@ -472,7 +651,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap-reverse;
 }
 .sobrenos-textos {
   flex: 1;
@@ -522,7 +700,35 @@ body {
   left: 2rem;
   background-image: url("../images/clinica/foto3.png");
 }
+@media (max-width: 56.25em) {
+  .galeria-bloco-1 {
+    width: 20rem;
+    height: 20rem;
+  }
+  .galeria-bloco-2 {
+    width: 15rem;
+    height: 30rem;
+  }
+  .galeria-bloco-3 {
+    width: 10rem;
+    height: 10rem;
+  }
+}
 
+@media (max-width: 56.25em) {
+  .sobrenos-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .sobrenos-text {
+    text-align: center !important;
+  }
+
+  .galeria {
+    margin-top: 5rem;
+  }
+}
 .spa {
   padding: 8rem;
   text-align: center;
@@ -535,6 +741,11 @@ body {
   align-items: center;
   gap: 8rem;
   margin-top: 8rem;
+}
+@media (max-width: 56.25em) {
+  .spa-content {
+    flex-direction: column-reverse;
+  }
 }
 .spa-img {
   border: 0.5rem solid #8ab596;
@@ -557,6 +768,17 @@ body {
   font-size: 1.8rem;
   margin: 2rem 0 3rem;
 }
+@media (max-width: 56.25em) {
+  .spa .spa-info,
+.spa .spa-title,
+.spa .spa-text {
+    text-align: center;
+  }
+  .spa .spa-img {
+    width: 40rem;
+    height: 27rem;
+  }
+}
 
 .marina {
   padding: 8rem;
@@ -570,6 +792,11 @@ body {
   align-items: center;
   gap: 8rem;
   margin-top: 4rem;
+}
+@media (max-width: 56.25em) {
+  .marina-content {
+    flex-direction: column-reverse;
+  }
 }
 .marina-img {
   border: 0.5rem solid #8ab596;
@@ -592,6 +819,17 @@ body {
   color: #55785e;
   font-size: 1.8rem;
   margin: 2rem 0 3rem;
+}
+@media (max-width: 56.25em) {
+  .marina .marina-info,
+.marina .marina-title,
+.marina .marina-text {
+    text-align: center;
+  }
+  .marina .marina-img {
+    width: 30rem;
+    height: 40rem;
+  }
 }
 
 /*# sourceMappingURL=style-clinica.css.map */
