@@ -283,12 +283,15 @@ body {
 .navigation {
   margin-bottom: 10rem;
   z-index: 1000;
+  display: flex;
+  align-items: center;
 }
 .navigation-list {
   display: flex;
   list-style: none;
   padding: 0;
   align-items: center;
+  margin-left: 5rem;
 }
 .navigation-item:not(:last-child) {
   margin-right: 4rem;
@@ -309,6 +312,10 @@ body {
   color: #f8fdf9;
 }
 
+.logo-img {
+  width: 35rem;
+}
+
 .navigationMobile {
   display: none;
 }
@@ -324,9 +331,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 3rem 10rem;
+    margin-bottom: 5rem;
   }
   .navigationMobile-logo {
-    width: 10rem;
+    width: 15rem;
+    position: absolute;
+    left: 5rem;
   }
 
   .mobileNav {
@@ -364,7 +374,7 @@ body {
     right: 5.5rem;
     top: 5rem;
     border-radius: 50%;
-    background-color: #55785e;
+    background-color: #7fad8c;
     transition: transform 0.8s cubic-bezier(0.65, -0.01, 0.35, 1.02);
     z-index: 7000;
   }
@@ -525,6 +535,21 @@ body {
   background-image: url("../images/clinica/cara.jpg");
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 5rem;
+  text-align: center;
+  background-image: url("../images/clinica/fundo4.png");
+  background-size: cover;
+  background-color: #f8fdf9;
+}
+.footer-img {
+  width: 30rem;
+}
+
 .main {
   background-image: url("../images/clinica/fundo1.png");
   background-size: cover;
@@ -559,10 +584,77 @@ body {
   background-image: url("../images/clinica/Map.png");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 81rem;
+  width: 100vw;
+  height: 55vw;
+  align-items: center;
+  display: flex;
+}
+.mapa-card {
+  border: 0.5rem solid #8ab596;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+  background-color: #f8fdf9;
+  text-align: center;
+  padding: 1rem 5rem 2rem;
+  margin-left: 10rem;
+}
+.mapa-loc {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #55785e;
+  margin-bottom: 0;
+}
+.mapa-title {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #55785e;
+  text-transform: uppercase;
+}
+.mapa-end {
+  color: #8ab596;
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
+@media (max-width: 56.25em) {
+  .mapa {
+    background-image: url("../images/clinica/mapaMobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 216vw;
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    padding: 3rem 4rem;
+  }
+  .mapa-card {
+    border: 0.5rem solid #8ab596;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
+    background-color: #f8fdf9;
+    text-align: center;
+    padding: 1rem 5rem 2rem;
+    margin-left: 0;
+  }
+  .mapa-loc {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #55785e;
+    margin-bottom: 0;
+  }
+  .mapa-title {
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #55785e;
+    text-transform: uppercase;
+  }
+  .mapa-end {
+    color: #8ab596;
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+}
 .servicos {
   background-image: url("../images/clinica/fundo3.png");
   background-size: cover;
