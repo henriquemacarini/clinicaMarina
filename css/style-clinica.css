@@ -254,7 +254,7 @@ body {
   background-image: url(../images/clinica/carolina.jpeg);
 }
 .equipe-boximg-8 {
-  background-image: url(../images/clinica/patricia.jpeg);
+  background-image: url(../images/clinica/mariaVitoria.jpg);
 }
 .equipe-boximg-9 {
   background-image: url(../images/clinica/fatima.jpeg);
@@ -851,9 +851,8 @@ body {
 .spa-info {
   text-align: left;
 }
-.spa-title {
-  color: #55785e;
-  font-size: 4.8rem;
+.spa-logo {
+  width: 15rem;
 }
 .spa-text {
   color: #55785e;
@@ -883,7 +882,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 8rem;
-  margin-top: 4rem;
 }
 @media (max-width: 56.25em) {
   .marina-content {
@@ -910,7 +908,10 @@ body {
 .marina-text {
   color: #55785e;
   font-size: 1.8rem;
-  margin: 2rem 0 3rem;
+  margin: 2rem 0 1rem;
+}
+.marina-logo {
+  width: 50rem;
 }
 @media (max-width: 56.25em) {
   .marina .marina-info,
