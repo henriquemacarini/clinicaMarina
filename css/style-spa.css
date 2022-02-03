@@ -232,6 +232,11 @@ body {
   text-align: left;
   flex: 2;
 }
+@media (max-width: 75em) {
+  .data-text {
+    flex: 3;
+  }
+}
 .data-tempo {
   font-family: Roboto;
   font-size: 1.4rem;

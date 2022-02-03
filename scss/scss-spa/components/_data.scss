@@ -49,6 +49,10 @@
     color: $roxo-escuro;
     text-align: left;
     flex: 2;
+
+    @include respons(big-tablet) {
+      flex: 3;
+    }
   }
 
   &-tempo {
